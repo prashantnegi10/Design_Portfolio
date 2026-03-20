@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff, #fdf2f8);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
+        }
+
+        .back {
+            margin: 20px;
+            display: inline-block;
+        }
+
+        .video {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            /* 16:9 ratio */
+        }
+
+        .video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>ANIMATION VIDEOS</h1>
+
+    <div class="grid">
+
+        <div class="video">
+            <iframe src="./Videos/Team_Intro.mp4" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="./Videos/Team_2.mp4" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="./Videos/State.mp4" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="./Videos/Four_Steps.mp4" allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe src="./Videos/Photo_Gallery.mp4" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back">← Back</a>
+
+</body>
+
+</html>

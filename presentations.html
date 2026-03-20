@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentations</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0f9ff, #fdf2f8);
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            /* FIX: keeps all cards same ratio */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* fills nicely without distortion */
+        }
+
+        .back {
+            margin: 40px;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                /* 1 card on mobile */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>PRESENTATIONS</h1>
+
+    <div class="grid">
+
+        <a href="https://www.slideshare.net/slideshow/comprehensive-corporate-overview-of-executive-search-and-talent-acquisition/286553559"
+            target="_blank">
+            <div class="card">
+                <img src="./images/1.png">
+            </div>
+        </a>
+
+        <a href="https://www.slideshare.net/slideshow/comprehensive-overview-of-key-concepts-and-strategies-in-business-communication/286553593"
+            target="_blank">
+            <div class="card">
+                <img src="./images/2.png">
+            </div>
+        </a>
+
+        <a href="https://www.slideshare.net/slideshow/innovative-business-solutions-transforming-india-s-logistics-industry/286553584"
+            target="_blank">
+            <div class="card">
+                <img src="./images/3.png">
+            </div>
+        </a>
+
+        <a href="https://www.slideshare.net/slideshow/comprehensive-company-profile-and-market-analysis-presentation-for-business-growth/286553588"
+            target="_blank">
+            <div class="card">
+                <img src="./images/4.png">
+            </div>
+        </a>
+
+        <a href="https://www.slideshare.net/slideshow/comprehensive-company-profile-and-strategic-overview-presentation/286553587"
+            target="_blank">
+            <div class="card">
+                <img src="./images/5.png">
+            </div>
+        </a>
+
+    </div>
+
+    <a href="index.html" class="back">← Back</a>
+
+</body>
+
+</html>
